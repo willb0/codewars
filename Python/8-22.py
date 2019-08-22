@@ -16,7 +16,4 @@ def string_transformer(s):
         main+=' '
     ret=main.split(' ')
     ret.reverse()
-
     return ' '.join(ret)[1:]
-
-print(string_transformer("Example string weiner poopY"))
