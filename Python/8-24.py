@@ -15,11 +15,12 @@ def find_nb(n):
         if(x>n):
             return -1
     return(y-1)
-
+#look at the URL, this one is hard to explain
+#this function returns the mirrored time(on a traditional clock)
+#https://www.codewars.com/kata/56548dad6dae7b8756000037/
 def what_is_the_time(timeinmirror):
     t=int(timeinmirror.split(':')[0])*60+int(timeinmirror.split(':')[1])
     q=720+(720-t)
     if q>779:
         q=q-720
     return '{:02}:{:02}'.format((int(round(q/60))),int(q%60))
-print(what_is_the_time('11:59'))
