@@ -25,10 +25,3 @@ class Vector(object):
         if vec == None:
             return False
         return self.val == vec.val
-
-
-
-x = Vector([1,2])
-print(x.val)
-print(x.norm())
-print(str(x))
